@@ -19,6 +19,7 @@ module FCS
       def keys; @hash.keys; end
       def values; @hash.values; end
       def [](k); @hash[k]; end
+      def hash; @hash; end
         
     end
   end

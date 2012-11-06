@@ -1,6 +1,8 @@
-require "fcs/version"
-require "fcs/header"
+require 'fcs/version'
+require 'fcs/segment'
+require 'fcs/file'
 
 module FCS
-  # Your code goes here...
 end
+
+# vim: set sw=2 sts=2 ai et:

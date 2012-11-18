@@ -20,7 +20,7 @@ module FCS
 
     # build and/or return a FCS::Segment::Text
     def text
-      if @text.nil?
+      unless @text.nil?
         @io.seek(header.text_begin + 1)
       end
       @text ||= FCS::Segment::Text.new(@io.read(header.text_end - header.text_begin))
